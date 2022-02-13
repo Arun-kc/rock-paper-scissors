@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <title>Rock Paper Scissors</title>
+        <meta charset="UTF-8" />
+        <meta="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="http://fonts.cdnfonts.com/css/callie-chalk-font" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="scoreboard">
+                <div class="title">
+                    <h1>Rock Paper Scissors</h1>
+                </div>
+                <div class="score">
+                    <p>SCORE</p>
+                    <h1>0</h1>
+                </div>
+            </div>
+
+            <div class="plays">
+                <div class="play rock">
+                    <img src="assets/rock.png" onclick="pickUserHand('rock')"/>
+                </div>
+                <div class="play paper">
+                    <img src="assets/paper.png" onclick="pickUserHand('paper')"/>
+                </div>
+                <div class="play scissor">
+                    <img src="assets/scissor.png" onclick="pickUserHand('scissor')"/>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="userplay"> 
+                    <h1>YOU PICKED</h1>
+                    <div class="handImageContainer">
+                        <img id="userPickImage" src="assets/paper.png" />
+                    </div>
+                </div>
+                <div class="referee">
+                    <div class="decision"><h1>YOU WIN</h1></div>
+                    <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+                </div>
+                <div class="computerplay">
+                    <h1>HOUSE PICKED</h1>
+                    <div class="handImageContainer">
+                        <img id="computerPickImage" src="assets/paper.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>build  with  💜  by <a target="_blank" href="https://twitter.com/arunkc97">arunkc</a> 
+                    🔧 contribute at <a target="_blank" href="https://github.com/Arun-kc">GitHub</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="javascript/logic.js"></script>
+    </body>
+</html>
